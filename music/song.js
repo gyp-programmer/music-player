@@ -146,6 +146,7 @@ const parseLrc = (lrc) => {
 
 const ul = document.getElementsByClassName("containerul")[0];
 const audio = document.getElementById("myAudio");
+audio.setAttribute('src', location.origin + '/static/assets/test.mp3')
 const initData = () => {
   const data = parseLrc(lrc);
 
