@@ -146,7 +146,9 @@ const parseLrc = (lrc) => {
 
 const ul = document.getElementsByClassName("containerul")[0];
 const audio = document.getElementById("myAudio");
-audio.setAttribute('src', location.origin + '/static/assets/test.mp3')
+const musicUrl = "https://music-player-ivory-six.vercel.app";
+audio.crossOrigin = 'anonymous';
+audio.setAttribute('src', musicUrl + '/static/assets/test.mp3')
 const initData = () => {
   const data = parseLrc(lrc);
 
